@@ -26,6 +26,13 @@
 
     The server will start running on `http://localhost:3002` by default.
 
+
+
+## Postman collection as a shareable link
+
+    https://www.postman.com/aerospace-astronomer-66584240/workspace/sidd/collection/31104175-e9e9c095-ec0f-4226-9e53-3984ab9e30a6?action=share&creator=31104175
+    
+
 # API Endpoints
 
  - `POST /addItemToInventory`: Add an item to the inventory.
@@ -33,8 +40,8 @@
    Request Body:
    ```json
    {
-     "productId": "string",
-     "quantity": "number"
+     "productId": "product1",
+     "quantity": 100
    }
    ```
 
@@ -43,8 +50,8 @@
    Request Body:
    ```json
    {
-     "productId": "string",
-     "quantity": "number"
+     "productId": "product1",
+     "quantity": 50
    }
    ```
 
@@ -53,9 +60,9 @@
    Request Body:
    ```json
    {
-     "customerId": "string",
-     "productId": "string",
-     "quantity": "number"
+     "customerId": "customer1",
+     "productId": "product1",
+     "quantity": 2
    }
    ```
 
@@ -64,8 +71,8 @@
    Request Body:
    ```json
    {
-     "cartValue": "number",
-     "discountId": "string"
+     "cartValue": 1000,
+     "discountId": "DISCOUNT10"
    }
    ```
 
