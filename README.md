@@ -40,8 +40,8 @@
    Request Body:
    ```json
    {
-     "productId": "string",
-     "quantity": "number"
+     "productId": "product1",
+     "quantity": 100
    }
    ```
 
@@ -50,8 +50,8 @@
    Request Body:
    ```json
    {
-     "productId": "string",
-     "quantity": "number"
+     "productId": "product1",
+     "quantity": 50
    }
    ```
 
@@ -60,9 +60,9 @@
    Request Body:
    ```json
    {
-     "customerId": "string",
-     "productId": "string",
-     "quantity": "number"
+     "customerId": "customer1",
+     "productId": "product1",
+     "quantity": 2
    }
    ```
 
@@ -71,8 +71,8 @@
    Request Body:
    ```json
    {
-     "cartValue": "number",
-     "discountId": "string"
+     "cartValue": 1000,
+     "discountId": "DISCOUNT10"
    }
    ```
 
