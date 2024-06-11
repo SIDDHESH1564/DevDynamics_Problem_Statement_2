@@ -1,0 +1,30 @@
+// Assume the following functions are defined elsewhere in your codebase:
+// - addItemToInventory(productId, quantity)
+// - removeItemFromInventory(productId, quantity)
+// - addItemToCart(customerId, productId, quantity)
+// - applyDiscountCoupon(cartValue, discountId)
+
+// Example driver function
+async function main() {
+    try {
+        // Add items to inventory
+        await addItemToInventory("product1", 10);
+        await addItemToInventory("product2", 20);
+
+        // Add items to cart
+        await addItemToCart("customer1", "product1", 3);
+        await addItemToCart("customer1", "product2", 5);
+
+        // Apply discount coupon
+        const cartValue = 200; // Assuming cart value is 200 Rs
+        const discountId = "DISCOUNT10"; // Assuming discount coupon ID
+        const discountedPrice = await applyDiscountCoupon(cartValue, discountId);
+
+        console.log(`Discounted price after applying coupon: ${discountedPrice}`);
+    } catch (error) {
+        console.error("An error occurred:", error);
+    }
+}
+
+// Call the main function
+main();
